@@ -37,19 +37,17 @@ It provides a **Flask Web App** where users enter personal details and get predi
 ---
 
 ## 📂 Project Structure
-
 InsuranceRiskPrediction/
 │
-├── app.py # Flask Web App
-├── train_models.py # Train & save models
-├── insurance.csv # Dataset (Kaggle)
-├── regression_model.pkl # Trained Regression Model
-├── classification_model.pkl # Trained Classification Model
-├── scaler.pkl # Preprocessing Scaler
-├── requirements.txt # Dependencies
+├── app.py                   # Flask Web App (runs the site)
+├── train_models.py          # Script to train & save models
+├── insurance.csv            # Dataset (Medical Cost Personal Dataset)
+├── regression_model.pkl     # Trained Regression Model (Saved by train_models.py)
+├── classification_model.pkl # Trained Classification Model (Saved by train_models.py)
+├── scaler.pkl               # Preprocessing Scaler
+├── requirements.txt         # Dependencies
 └── templates/
-└── index.html # Frontend HTML Form
-
+    └── index.html           # Frontend HTML Form
 
 ---
 
@@ -67,8 +65,20 @@ InsuranceRiskPrediction/
 
 ---
 
-## 🏃 How to Run
-Clone the repository:
-```bash
-git clone https://github.com/yourusername/InsuranceRiskPrediction.git
-cd InsuranceRiskPrediction
+## 🏃 Run Project
+# Install dependencies
+pip install -r requirements.txt
+
+# Train models
+python train_models.py
+
+# Run Flask App
+python app.py
+
+
+
+## Output looks like
+Predicted Medical Cost: $15347.22
+Risk Category: High Risk
+
+
