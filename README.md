@@ -49,3 +49,26 @@ InsuranceRiskPrediction/
 ├── requirements.txt # Dependencies
 └── templates/
 └── index.html # Frontend HTML Form
+
+
+---
+
+## ⚡ Workflow
+1. **Data Preprocessing**  
+   - Encode categorical features (sex, smoker, region)  
+   - Scale numerical features  
+
+2. **Model Training**  
+   - Regression → Linear Regression / Random Forest  
+   - Classification → Logistic Regression / Random Forest  
+
+3. **Web App**  
+   - User enters details → Model predicts cost & risk category  
+
+---
+
+## 🏃 How to Run
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/InsuranceRiskPrediction.git
+cd InsuranceRiskPrediction
